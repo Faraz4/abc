@@ -7,7 +7,7 @@ func TestReverse(t *testing.T) {
 		in, want string
 	}{
 		{"Hello, world", "dlrow ,olleH"},
-		{"Hello, 世界", "界世 ,olleH"},
+		{"Hello, hello", "界世 ,olleh"},
 	}
 	for _, c := range cases {
 		got := Reverse(c.in)
